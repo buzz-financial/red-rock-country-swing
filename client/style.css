@@ -1,6 +1,6 @@
-/* styles.css */
-
-/* General Body Styles */
+/* ===================================================
+   General Styles
+=================================================== */
 body {
     font-family: Poppins, sans-serif;
     background-color: #EA580C;
@@ -16,35 +16,41 @@ body {
     padding: 20px;
 }
 
-/* Logo Container */
+/* ===================================================
+   Logo
+=================================================== */
 .logo_containter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Checkout Form Styles */
+/* ===================================================
+   Checkout Form
+=================================================== */
 .checkout-form {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;  /* Restrict the form width */
-    margin: 0 auto;  /* Center form horizontally */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.checkout-form h2,
+.checkout-form h3 {
+    color: #EA580C;
+    text-align: center;
 }
 
 .checkout-form h2 {
-    color: #EA580C;
     font-size: 28px;
     margin-bottom: 20px;
-    text-align: center;  /* Center heading */
 }
 
 .checkout-form h3 {
-    color: #EA580C;
     font-size: 22px;
     margin-bottom: 15px;
-    text-align: center;  /* Center heading */
 }
 
 .checkout-form label {
@@ -53,19 +59,21 @@ body {
     font-size: 16px;
 }
 
-/* Input Fields Styling */
+/* ===================================================
+   Input Fields
+=================================================== */
 .checkout-form input[type="text"],
 .checkout-form input[type="email"],
 .checkout-form input[type="tel"],
 .checkout-form input[type="password"],
 .checkout-form select {
     width: 100%;
-    padding: 12px;  /* Increase padding for a bigger input field */
-    margin-bottom: 20px;  /* Ensure consistent spacing between fields */
+    padding: 12px;
+    margin-bottom: 20px;
     border: 2px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
-    box-sizing: border-box;  /* Include padding and border in width */
+    box-sizing: border-box;
 }
 
 .checkout-form input[type="text"]:focus,
@@ -77,7 +85,9 @@ body {
     outline: none;
 }
 
-/* Button Styling */
+/* ===================================================
+   Button
+=================================================== */
 .checkout-form button {
     width: 100%;
     padding: 15px;
@@ -88,18 +98,20 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    margin-top: 10px;  /* Space between input and button */
+    margin-top: 10px;
 }
 
 .checkout-form button:hover {
-    background-color: #D87B1F;  /* Slightly different hover color */
+    background-color: #D87B1F;
     transform: scale(1.05);
 }
 
-/* Terms & Conditions Checkbox */
+/* ===================================================
+   Terms & Conditions
+=================================================== */
 .terms {
     margin: 15px 0;
-    text-align: center;  /* Center the checkbox and label */
+    text-align: center;
 }
 
 .terms label {
@@ -110,20 +122,9 @@ body {
     margin-right: 10px;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px 0;
-    background-color: #EA580C;
-    color: white;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
+/* ===================================================
+   Membership Section
+=================================================== */
 .membership-section {
     font-family: 'Poppins', sans-serif;
     padding: 2rem;
@@ -143,10 +144,10 @@ footer p {
     border-radius: 12px;
     padding: 1.5rem;
     width: 300px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
     background: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .card:hover {
@@ -157,6 +158,11 @@ footer p {
 .card h3 {
     margin-top: 0;
     color: #cc0000;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .card .details {
@@ -175,11 +181,25 @@ footer p {
     display: block;
 }
 
-.card label {
-    display: block;
-    margin-bottom: 0.5rem;
+/* ===================================================
+   Footer
+=================================================== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #EA580C;
+    color: white;
 }
 
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ===================================================
+   Animations
+=================================================== */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
