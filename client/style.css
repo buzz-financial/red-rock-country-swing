@@ -124,3 +124,63 @@ footer p {
     font-size: 14px;
 }
 
+.membership-section {
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+.membership-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    background: #f9f9f9;
+}
+
+.card:hover {
+    border-color: #cc0000;
+    box-shadow: 0 0 10px rgba(204, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #cc0000;
+}
+
+.card .details {
+    margin-top: 1rem;
+    text-align: left;
+    display: none;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.card.active {
+    background-color: #fff0f0;
+    border-color: #cc0000;
+}
+
+.card.active .details {
+    display: block;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
