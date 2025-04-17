@@ -167,9 +167,19 @@ body {
     font-size: 1.25rem;
   }
   
-  .pricing {
+  /* .pricing {
     padding: 4rem 1rem;
     text-align: center;
+  }
+
+  .pricing h1 {
+    font-size: 36px;
+    font-weight: bolder;
+  }
+
+  .pricing p {
+    color: #4B5563;
+    font-weight: bold;
   }
   
   .pricing-grid {
@@ -199,7 +209,87 @@ body {
     color: #EA580C;
     cursor: pointer;
     border-radius: 9999px;
+  } */
+
+  .pricing {
+    text-align: center;
+    padding: 4rem 1rem;
   }
+  
+  .pricing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;  /* Center column is 1.5 times wider */
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .price-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price-card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .price-card span {
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  button {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    margin-top: 1.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ea580c;
+  }
+  
+  /* Make columns thinner on smaller screens */
+  @media (max-width: 1024px) {
+    .pricing-grid {
+      grid-template-columns: 1fr 1.2fr 1fr;  /* Slightly reduce width of center column */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;  /* Stack all columns vertically */
+    }
+    .price-card {
+      margin-bottom: 2rem;  /* Add spacing between stacked cards */
+    }
+  }
+  
+  
   
   .footer-contact {
     background: #EA580C;
@@ -216,15 +306,27 @@ body {
     justify-content: center; /* optional: center horizontally */
     flex-wrap: wrap; /* optional: stacks on smaller screens */
   }
+
+  .contact-info i {
+    font-size: 1.2rem;     /* slightly smaller icon */
+    margin-right: 0.5rem;  /* space between icon and text */
+    vertical-align: middle;
+  }
   
   .contact-info a {
+    display: inline-flex;
+    align-items: center;
     color: white;
     text-decoration: none;
     font-weight: 500;
   }
   
+  .contact-info a i {
+    margin-right: 0.5rem;
+  }  
+  
   .contact-info a:hover {
-    text-decoration: underline;
+    font-weight: bold;
   }
   
   
