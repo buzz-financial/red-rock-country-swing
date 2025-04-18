@@ -6,6 +6,7 @@
   <title>Red Rock Country Swing</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="page.css" />
 </head>
 <body>
@@ -14,12 +15,7 @@
       <div class="logo">
         <a href="/"><img src="images/redrockLogo.png" alt="Red Rock Country Swing" /></a>
       </div>
-      <button class="mobile-menu-toggle">☰</button>
-      <nav class="mobile-menu">
-        <button class="close-btn">✕</button>
-        <a href="#contact-section" class="cta-button">Contact Us</a>
-      </nav>
-      <div class="desktop-menu">
+      <div class="contact-button">
         <a href="#contact-section" class="cta-button">Contact Us</a>
       </div>
     </div>
@@ -75,28 +71,6 @@
       </div>
     </section>
 
-    <!-- <section id="pricing-section" class="pricing">
-      <h1>PRICING</h1>
-      <p>Dance tickets can be purchased online or in person (at the door)</p>
-      <div class="pricing-grid">
-        <div class="price-card">
-          <h2>One Time</h2>
-          <p>One Night Dance - <span>$8</span></p>
-          <p>One Night Dance + Class - <span>$10</span></p>
-        </div>
-        <div class="price-card">
-          <h2>Monthly</h2>
-          <p>Dance Only Membership - <span>$18</span></p>
-          <p>Dance + Class - <span>$28</span></p>
-        </div>
-        <div class="price-card">
-          <h2>Couple's Membership</h2>
-          <p>Dance Only - <span>$32</span></p>
-          <p>Dance + Class - <span>$52</span></p>
-        </div>
-      </div>
-    </section> -->
-
     <section id="pricing-section" class="pricing">
       <h1>PRICING</h1>
       <p>Dance tickets can be purchased online or in person (at the door)</p>
@@ -123,30 +97,61 @@
           <p>Dance + Class - <span>$52</span></p>
         </div>
       </div>
+      <div class="button-container">
+        <a href="checkout-page.html" class="pricing-button">Start Dancing Today</a>
+      </div>
     </section>
      
 
     <footer>
-      <div id="contact-section" class="footer-contact">
-        <div class="contact-info">
-          <div>
-            <a href="tel:(801) 419-9644">
-              <i class="material-icons">phone</i> (801) 419-9644
-            </a>
+      <div class="footer-container">
+        <!-- Left Image Section with Contact Info Below -->
+        <div class="footer-image">
+          <img src="images/redrockLogo.png" alt="Red Rock Country Swing" />
+          <div class="footer-contact">
+            <div class="contact-info">
+              <div>
+                <a href="tel:(801) 419-9644">
+                  <i class="material-icons">phone</i> (801) 419-9644
+                </a>
+              </div>
+              
+              <div>
+                <a href="mailto:rrcountryswing@gmail.com">
+                  <i class="material-icons">email</i> rrcountryswing@gmail.com
+                </a>
+              </div>       
+    
+              <div>
+                <a href="https://www.instagram.com/redrockcountryswing" target="_blank" style="font-style: italic;">
+                  <i class="fab fa-instagram"></i> @redrockcountryswing
+                </a>
+              </div> 
+    
+              <div>
+                <a href="https://www.facebook.com/p/Red-Rock-Country-Swing-100086722062194/" target="_blank" style="font-style: italic;">
+                  <i class="fab fa-facebook-f"></i> @Red Rock Country Swing
+                </a>
+              </div>    
+            </div>
           </div>
-          
-          <div>
-            <a href="mailto:rrcountryswing@gmail.com">
-              <i class="material-icons">email</i> rrcountryswing@gmail.com
-            </a>
-          </div>          
         </div>
-      </div>
-      <div class="footer-bottom">
-        <img src="images/redrockLogo.png" alt="Red Rock Country Swing" />
-        <p>&copy; 2024. All rights reserved</p>
+    
+        <!-- Right Maps Section -->
+        <div class="footer-maps">
+          <div class="map">
+            <h3>St. George Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0121009998397!2d-113.6096551234684!3d37.08101867216849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca457d0271b977%3A0xe56a8ebde8fa7019!2s1094%20W%201600%20S%2C%20St.%20George%2C%20UT%2084770!5e0!3m2!1sen!2sus!4v1745003339028!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="map">
+            <h3>Washington Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.7415571937318!2d-113.48859519999998!3d37.063641499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca50b09101e6ed%3A0xa00ad2b86a315a7a!2s5015%20S%20Cattail%20Way%2C%20Washington%2C%20UT%2084780!5e0!3m2!1sen!2sus!4v1745003473179!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <!-- <p>&copy; 2024. All rights reserved</p> -->
       </div>
     </footer>
+    
   </main>
 </body>
 </html>
