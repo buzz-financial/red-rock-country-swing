@@ -162,6 +162,23 @@ body {
     padding: 2rem;
     border-radius: 0.5rem;
   }
+
+  .directions-btn {
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    background-color: #EA580C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .directions-btn:hover {
+    background-color: #c24908;
+  }
+  
   
   .day {
     color: #EA580C;
