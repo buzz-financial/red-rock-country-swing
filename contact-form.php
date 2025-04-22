@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $email   = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
   $message = htmlspecialchars($_POST["message"]);
 
-  $to = "youremail@example.com"; // <-- replace this with your actual email
+  $to = "g.puente@expitrans.com"; // <-- replace this with your actual email
   $subject = "New Message from Contact Form";
   $headers = "From: $email\r\n";
   $headers .= "Reply-To: $email\r\n";
