@@ -12,43 +12,6 @@ a {
   color: inherit;
 }
 
-
-/* === Header === */
-/* header {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.container.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo img {
-  height: 60px;
-}
-
-.cta-button {
-  background-color: #EA580C;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #d74f09;
-} */
-
 /* Navbar */
 /* Global Styles */
 * {
@@ -186,6 +149,10 @@ a {
 }
 
 /* === Hero Section === */
+main {
+  padding-top: 80px; /* adjust based on your navbar height */
+}
+
 .hero {
   background-image: url('images/contact-hero.jpg');
   background-size: cover;

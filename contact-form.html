@@ -161,5 +161,14 @@
         <!-- <p>&copy; 2024. All rights reserved</p> -->
       </div>
     </footer>
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const navbar = document.getElementById('navbar');
+
+      toggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');  // slide the menu panel
+        toggle.classList.toggle('open');    // morph burger ↔ X
+      });
+  </script>
 </body>
 </html>

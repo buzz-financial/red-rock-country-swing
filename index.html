@@ -6,38 +6,51 @@
   <title>Red Rock Country Swing</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|PT+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index2.css" />
 </head>
 <body>
-  <header>
-    <div class="container header">
-      <div class="logo">
-        <a href="/"><img src="images/redrockLogo.png" alt="Red Rock Country Swing" /></a>
-      </div>
-      <div class="contact-button">
-        <a href="contact-form.html" class="cta-button">Contact Us</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <div class="hero-inner">
-          <img src="images/dancers.jpeg" alt="Dancers" class="hero-img" />
-          <div class="hero-text">
-            <h1>COUNTRY SWING</h1>
-            <h2>DANCE</h2>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+          
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <img src="images/redrockLogo.png" alt="Red Rock Country Swing Logo" class="logo-img">
+          </a>
+      
+          <!-- Hamburger Menu Toggle -->
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+      
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="gallery-page.html">Gallery</a></li>
+            <li><a href="contact-form.html">Contact</a></li>
+          </ul>
+      
         </div>
-        <div class="hero-buttons">
-          <a href="#pricing-section" class="cta-button">Buy a Monthly Membership</a>
-          <a href="#pricing-section" class="cta-button">Buy a One-Time Pass</a>
+      </nav>
+
+    <div id="hero">
+        <div class="texture"></div>
+      
+        <video loop muted autoplay playsinline preload="auto">
+          <source src="vidoes/home-vi.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      
+        <div class="caption">
+            <h1>Kick Up Your Boots</h1>
+            <h2>Red Rock Country Swing Is Just Gettin’ Started</h2>
+            
         </div>
       </div>
-    </section>
+      
 
     <section class="sponsors">
       <h2>Our Sponsors</h2>
@@ -158,7 +171,19 @@
         <!-- <p>&copy; 2024. All rights reserved</p> -->
       </div>
     </footer>
-    
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        toggle.addEventListener('click', () => {
+          navbar.classList.toggle('active');  // slide the menu panel
+          toggle.classList.toggle('open');    // morph burger ↔ X
+        });
+
+
+    </script>
+    <script src="object-fit-videos.js"></script>
+    <script src="app.js"></script>
   </main>
 </body>
 </html>
