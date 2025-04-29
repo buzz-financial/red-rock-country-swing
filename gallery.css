@@ -61,14 +61,14 @@ a {
 }
 
 .nav-links li a {
-  color: #EA580C;
+  color: #000;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #000 ;
+  color: #EA580C;
 }
 
 /* Burger Menu */
