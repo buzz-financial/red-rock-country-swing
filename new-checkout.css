@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f7f7f7;
     color: #333;
@@ -101,11 +101,11 @@
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+/*   
   .step-card button {
     width: 100%;
     padding: 12px;
-    background-color: #28a745;
+    background-color: #EA580C;
     color: white;
     font-size: 16px;
     border: none;
@@ -115,8 +115,31 @@
   }
   
   .step-card button:hover {
-    background-color: #218838;
+    background-color: #a13c06;
+  } */
+
+  /* Modern Checkout Button */
+  #checkout-button {
+    background-color: #2980b9;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 0 auto; /* top auto bottom auto */
+    display: block;
   }
+  
+  
+  #checkout-button:hover {
+    background-color: #21618c;
+    transform: translateY(-2px);
+  }
+  
   
 #section-info {
     max-width: 600px;
@@ -249,21 +272,44 @@
     border-radius: 8px;
 }
 
+/* Modern Back Button Style */
 .last-back-button {
-    background-color: rgb(216, 34, 34);
-}
-
-.last-back-button:hover {
-    background-color: rgb(175, 20, 20);
-}
-
-.pay-button {
-    background-color: rgb(10, 150, 10);
-}
-
-.pay-button:hover {
-    background-color: rgb(8, 121, 8);
-}
+    background-color: #e74c3c;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+  }
+  
+  .last-back-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  /* Modern Pay Button Style */
+  .pay-button {
+    background-color: #27ae60;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pay-button:hover {
+    background-color: #1e8449;
+    transform: translateY(-2px);
+  }  
 
 .hidden {
     display: none;

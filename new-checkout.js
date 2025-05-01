@@ -76,3 +76,79 @@
 //   console.log("Name on Card:", fullName);
 //   console.log("Card Number:", cardNumber);
 // });
+
+
+// script.js
+
+// Utility to show and hide sections
+function goToSection(sectionId) {
+  // Hide all sections
+  document.querySelectorAll("section").forEach((sec) => {
+    sec.classList.add("hidden");
+  });
+
+  // Show the requested section
+  const targetSection = document.getElementById(sectionId);
+  if (targetSection) {
+    targetSection.classList.remove("hidden");
+
+    // Update summary if going to payment section
+    if (sectionId === "section-payment") {
+      updatePaymentSummary();
+    }
+  }
+}
+
+// Show full form (Back button from Payment to Info)
+function showFullForm() {
+  goToSection("section-info");
+}
+
+// Fill in summary details
+function updatePaymentSummary() {
+  const selectedOption = document.querySelector(
+    ".checkbox-input:checked"
+  );
+
+  if (!selectedOption) return;
+
+  const value = selectedOption.value;
+  const labelText = selectedOption.parentElement.innerText.trim();
+  const parentCard = selectedOption.closest(".card");
+  const programType = parentCard.querySelector("h3").innerText.trim();
+
+  // Basic logic to extract day/class info from the label
+  let days = "-";
+  if (value.includes("class")) {
+    days = "Dance + Class";
+  } else {
+    days = "Dance Only";
+  }
+
+  // Update the summary values
+  document.getElementById("summary-program").textContent = programType;
+  document.getElementById("summary-days").textContent = days;
+
+  const priceMatch = labelText.match(/\$[\d.]+/);
+  if (priceMatch) {
+    document.getElementById("summary-price").textContent = priceMatch[0];
+  } else {
+    document.getElementById("summary-price").textContent = "-";
+  }
+}
+
+// Optional: Add simple validation before proceeding
+document.getElementById("checkout-button").addEventListener("click", (e) => {
+  const firstName = document.getElementById("firstName").value.trim();
+  const lastName = document.getElementById("lastName").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const selectedMembership = document.querySelector(".checkbox-input:checked");
+
+  if (!firstName || !lastName || !phone || !email || !selectedMembership) {
+    alert("Please fill in all fields and select a membership option.");
+    return;
+  }
+
+  goToSection("section-payment");
+});
