@@ -18,9 +18,20 @@ function goToSection(sectionId) {
 }
 
 // Show full form (Back button from Payment to Info)
+// function showFullForm() {
+//   goToSection("section-info");
+// }
 function showFullForm() {
-  goToSection("section-info");
+  // First hide all sections
+  document.querySelectorAll("section").forEach((sec) => {
+    sec.classList.add("hidden");
+  });
+
+  // Show both the membership and info sections
+  document.getElementById("membership-info").classList.remove("hidden");
+  document.getElementById("section-info").classList.remove("hidden");
 }
+
 
 // Fill in summary details
 function updatePaymentSummary() {
